@@ -1,0 +1,15 @@
+<h2>{{title}}</h2>
+<title>{{title}}</title>
+
+<table class="table table-responsive table-striped">
+    <tr>
+      <th>Registration No.</th>
+      <th>Status</th>
+      <th>Compnay</th>
+    </tr>
+    <tr *ngFor="let row of data;">
+      <td>{{row[1].regNo}}</td>
+      <td>{{row[1].status}}</td>
+      <td>{{row[1].name}}</td>
+    </tr>
+  </table>
